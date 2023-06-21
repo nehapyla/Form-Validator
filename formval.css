@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left{
+    width: 33rem;
+    height: 35rem;
+    background-color: palevioletred;
+    padding: 1rem;
+    border-radius: 15px 0 0 15px;
+}
+
+#right{
+    width: 33rem;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+    border: 3px solid palevioletred;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+h3{
+    margin-top: 1.5rem;
+}
+
+#sub{
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+    background-color: palevioletred;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#google{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: rgb(254, 250, 250);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 1rem 1.5rem 1.5rem 0;
+}
+
+#fb{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: rgb(81, 81, 209);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 1rem 0 1.5rem 1.5rem;
+}
+
+h3{
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+#or{
+    text-align: center;
+}
+
+.logo{
+    width: 1rem;
+    height: 1rem;
+}
+
+.formdiv {
+    position: relative;
+}
+
+.formdiv span {
+    visibility: hidden;
+    position: absolute;   
+}
+
+.formdiv p {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.formdiv.success input {
+    border-color: green;
+}
+
+.formdiv.error input {
+    border-color: red;
+}
+
+.formdiv.success span.success {
+    color: green;
+    visibility: visible;
+}
+.formdiv.error span.error {
+    color: red;
+    visibility: visible;
+}
+
+.formdiv.error p{
+    visibility: visible;
+    color: red;
+}
